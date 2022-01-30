@@ -1,0 +1,306 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://paginas/Tela 1.png" type="Texture" id=1]
+[ext_resource path="res://paginas/Publicação de vaga 1.png" type="Texture" id=2]
+[ext_resource path="res://mover.gd" type="Script" id=3]
+[ext_resource path="res://paginas/Vagas da empresa.png" type="Texture" id=4]
+[ext_resource path="res://paginas/Tela principal - empresa.png" type="Texture" id=5]
+[ext_resource path="res://paginas/Entrar.png" type="Texture" id=6]
+[ext_resource path="res://paginas/Cadastrar.png" type="Texture" id=7]
+[ext_resource path="res://paginas/Cadastro  usuárias.png" type="Texture" id=8]
+[ext_resource path="res://paginas/Tela principal - usuária.png" type="Texture" id=9]
+[ext_resource path="res://paginas/vagas.jpeg" type="Texture" id=10]
+[ext_resource path="res://paginas/detalhes 2.jpeg" type="Texture" id=11]
+[ext_resource path="res://paginas/detalhes.jpeg" type="Texture" id=12]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 2237.0
+margin_bottom = 2419.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entrar" type="ScrollContainer" parent="."]
+margin_right = 1812.0
+margin_bottom = 752.0
+scroll_horizontal_enabled = false
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Entrar"]
+margin_right = 1800.0
+margin_bottom = 900.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="TextureRect" parent="Entrar/HBoxContainer"]
+margin_right = 360.0
+margin_bottom = 900.0
+texture = ExtResource( 1 )
+
+[node name="Entrar" type="TextureButton" parent="Entrar/HBoxContainer/Home"]
+margin_left = 32.0
+margin_top = 452.0
+margin_right = 331.0
+margin_bottom = 525.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cadastrar" type="TextureButton" parent="Entrar/HBoxContainer/Home"]
+margin_left = 29.0
+margin_top = 561.0
+margin_right = 325.0
+margin_bottom = 644.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entrar" type="TextureRect" parent="Entrar/HBoxContainer"]
+margin_left = 360.0
+margin_right = 720.0
+margin_bottom = 900.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entrar Empresa" type="TextureButton" parent="Entrar/HBoxContainer/Entrar"]
+margin_left = 37.0
+margin_top = 748.0
+margin_right = 321.0
+margin_bottom = 833.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Voltar" type="TextureButton" parent="Entrar/HBoxContainer/Entrar"]
+margin_left = 7.0
+margin_top = 12.0
+margin_right = 83.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empresa Pagina" type="TextureRect" parent="Entrar/HBoxContainer"]
+margin_left = 720.0
+margin_right = 1080.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+
+[node name="Ir para Vagas" type="TextureButton" parent="Entrar/HBoxContainer/Empresa Pagina"]
+margin_left = 34.0
+margin_top = 447.0
+margin_right = 334.0
+margin_bottom = 523.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Voltar" type="TextureButton" parent="Entrar/HBoxContainer/Empresa Pagina"]
+margin_left = 7.0
+margin_top = 12.0
+margin_right = 83.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vagas" type="TextureRect" parent="Entrar/HBoxContainer"]
+margin_left = 1080.0
+margin_right = 1440.0
+margin_bottom = 900.0
+texture = ExtResource( 4 )
+
+[node name="Detalhes" type="TextureButton" parent="Entrar/HBoxContainer/Vagas"]
+margin_left = 78.0
+margin_top = 226.0
+margin_right = 287.0
+margin_bottom = 278.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Adicionar vagas" type="TextureButton" parent="Entrar/HBoxContainer/Vagas"]
+margin_left = 31.0
+margin_top = 661.0
+margin_right = 323.0
+margin_bottom = 730.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Voltar" type="TextureButton" parent="Entrar/HBoxContainer/Vagas"]
+margin_left = 7.0
+margin_top = 12.0
+margin_right = 83.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Publicar Vagas" type="TextureRect" parent="Entrar/HBoxContainer"]
+margin_left = 1440.0
+margin_right = 1800.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+
+[node name="Voltar" type="TextureButton" parent="Entrar/HBoxContainer/Publicar Vagas"]
+margin_left = 7.0
+margin_top = 12.0
+margin_right = 83.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Entrar"]
+
+[node name="Cadastro" type="ScrollContainer" parent="."]
+visible = false
+margin_bottom = 760.0
+scroll_horizontal_enabled = false
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Cadastro"]
+margin_right = 1452.0
+margin_bottom = 1765.0
+
+[node name="Tipo" type="TextureRect" parent="Cadastro/HBoxContainer"]
+margin_right = 360.0
+margin_bottom = 1765.0
+texture = ExtResource( 7 )
+
+[node name="User Cadastro" type="TextureButton" parent="Cadastro/HBoxContainer/Tipo"]
+margin_left = 34.0
+margin_top = 570.0
+margin_right = 318.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cadastro Pessoa" type="TextureRect" parent="Cadastro/HBoxContainer"]
+margin_left = 360.0
+texture = ExtResource( 8 )
+
+[node name="Proximo" type="TextureButton" parent="Cadastro/HBoxContainer/Cadastro Pessoa"]
+margin_left = 28.0
+margin_top = 1630.0
+margin_right = 333.0
+margin_bottom = 1708.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VoltarCadastro" type="TextureButton" parent="Cadastro/HBoxContainer/Cadastro Pessoa"]
+margin_right = 74.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pagina User" type="TextureRect" parent="Cadastro/HBoxContainer"]
+margin_left = 720.0
+texture = ExtResource( 9 )
+
+[node name="Vagas" type="TextureButton" parent="Cadastro/HBoxContainer/Pagina User"]
+margin_left = 31.0
+margin_top = 450.0
+margin_right = 328.0
+margin_bottom = 523.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VoltarCadastro" type="TextureButton" parent="Cadastro/HBoxContainer/Pagina User"]
+margin_right = 74.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vagas" type="TextureRect" parent="Cadastro/HBoxContainer"]
+margin_left = 1080.0
+texture = ExtResource( 10 )
+
+[node name="VoltarCadastro" type="TextureButton" parent="Cadastro/HBoxContainer/vagas"]
+margin_right = 74.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Cadastro"]
+
+[node name="Detalhes" type="ScrollContainer" parent="."]
+visible = false
+margin_right = 736.0
+margin_bottom = 756.0
+scroll_horizontal_enabled = false
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Detalhes"]
+margin_right = 724.0
+margin_bottom = 760.0
+
+[node name="Detalhe" type="TextureRect" parent="Detalhes/HBoxContainer"]
+margin_right = 360.0
+margin_bottom = 760.0
+texture = ExtResource( 11 )
+
+[node name="candidatos" type="TextureButton" parent="Detalhes/HBoxContainer/Detalhe"]
+margin_left = 72.0
+margin_top = 682.0
+margin_right = 290.0
+margin_bottom = 734.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Candidatos" type="TextureRect" parent="Detalhes/HBoxContainer"]
+margin_left = 364.0
+margin_right = 724.0
+margin_bottom = 760.0
+texture = ExtResource( 12 )
+
+[node name="Tween" type="Tween" parent="Detalhes"]
+
+[connection signal="pressed" from="Entrar/HBoxContainer/Home/Entrar" to="Entrar" method="_on_Entrar_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Home/Cadastrar" to="Entrar" method="_on_CadastrarSelf_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Home/Cadastrar" to="Cadastro" method="_on_Cadastrar_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Entrar/Entrar Empresa" to="Entrar" method="_on_Entrar_Empresa_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Entrar/Voltar" to="Entrar" method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Empresa Pagina/Ir para Vagas" to="Entrar" method="_on_Ir_para_Vagas_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Empresa Pagina/Voltar" to="Entrar" method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Vagas/Detalhes" to="Entrar" method="_on_DetalhesSelf_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Vagas/Detalhes" to="Detalhes" method="_on_Detalhes_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Vagas/Adicionar vagas" to="Entrar" method="_on_Adicionar_vagas_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Vagas/Voltar" to="Entrar" method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Entrar/HBoxContainer/Publicar Vagas/Voltar" to="Entrar" method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/Tipo/User Cadastro" to="Cadastro" method="_on_User_Cadastro_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/Cadastro Pessoa/Proximo" to="Cadastro" method="_on_Proximo_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/Cadastro Pessoa/VoltarCadastro" to="Cadastro" method="_on_VoltarCadastro_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/Pagina User/Vagas" to="Cadastro" method="_on_Vagas_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/Pagina User/VoltarCadastro" to="Cadastro" method="_on_VoltarCadastro_pressed"]
+[connection signal="pressed" from="Cadastro/HBoxContainer/vagas/VoltarCadastro" to="Cadastro" method="_on_VoltarCadastro_pressed"]
+[connection signal="pressed" from="Detalhes/HBoxContainer/Detalhe/candidatos" to="Detalhes" method="_on_candidatos_pressed"]
